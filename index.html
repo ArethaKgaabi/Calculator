@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Main calculator container -->
+    <div id="calculator">
+      <input id="display" readonly />
+      <!-- Display for showing input and results -->
+      <div class="digits">
+        <!-- Container for the first row of buttons -->
+
+        <!-- Clear all input -->
+        <button onclick="allClearDisplay('AC')" class="color">AC</button>
+        <!-- Delete the last input -->
+        <button onclick="deleteDisplay('DE')" class="color">DE</button>
+        <!-- Delete the current input -->
+        <button onclick="clearDisplay('C')" class="color">C</button>
+        <!-- percentage operator -->
+        <button onclick="appendToDisplay('%')" class="color">%</button>
+      </div>
+
+      <div class="digits">
+        <!-- Container for the second row of buttons -->
+        <!-- Append '7' to display -->
+        <button onclick="appendToDisplay('7')">7</button>
+        <!-- Append '8' to display -->
+        <button onclick="appendToDisplay('8')">8</button>
+        <!-- Append '9' to display -->
+        <button onclick="appendToDisplay('9')">9</button>
+        <!-- division operator -->
+        <button onclick="appendToDisplay('/')" class="color">/</button>
+      </div>
+
+      <div class="digits">
+        <!-- Container for the third row of buttons -->
+        <!-- Append '4' to display -->
+        <button onclick="appendToDisplay('4')">4</button>
+        <!-- Append '5' to display -->
+        <button onclick="appendToDisplay('5')">5</button>
+        <!-- Append '6' to display -->
+        <button onclick="appendToDisplay('6')">6</button>
+        <!-- Multiplication operator-->
+        <button onclick="appendToDisplay('*')" class="color">*</button>
+      </div>
+
+      <div class="digits">
+        <!-- Container for the forth row of buttons -->
+        <!-- Append '1' to display -->
+        <button onclick="appendToDisplay('1')">1</button>
+        <!-- Append '2' to display -->
+        <button onclick="appendToDisplay('2')">2</button>
+        <!-- Append '3' to display -->
+        <button onclick="appendToDisplay('3')">3</button>
+        <!-- Append '0' to display -->
+        <button onclick="appendToDisplay('0')" class="color">0</button>
+      </div>
+
+      <div class="digits">
+        <!-- Container for the fith row of buttons -->
+        <!-- Append '7' to display -->
+        <button onclick="appendToDisplay('.')">.</button>
+
+        <!-- Append decimal '.' to display -->
+        <button onclick="appendToDisplay('/')">/</button>
+        <!-- Calculate results-->
+        <button onclick="calculate('=')" id="equal" class="color">=</button>
+      </div>
+    </div>
+    <script src="javaScript.js"></script>
+  </body>
+</html>
